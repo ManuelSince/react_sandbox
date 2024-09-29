@@ -1,7 +1,7 @@
 import { ReactElement, useState } from 'react';
 
 const ChangeColor = (): ReactElement => {
-  const [color, setColor] = useState<string>('#639732');
+  const [color, setColor] = useState<string>('');
   const handleColor = () => {
     setColor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
   };

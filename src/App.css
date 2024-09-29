@@ -202,6 +202,9 @@ input[type='checkbox']:hover {
 .border-green {
   border: 2px solid rgb(132 204 22);
 }
+.border-blue-400 {
+  border: 2px solid #63b3ed;
+}
 .border-x {
   border-left: 2px solid white;
   border-right: 2px solid white;
@@ -220,6 +223,9 @@ input[type='checkbox']:hover {
   scrollbar-color: #6969dd #e0e0e0;
   scrollbar-width: thin;
   overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
 }
 #task {
   transition-property: clip;
@@ -254,6 +260,9 @@ input[type='checkbox']:hover {
 .bg-white {
   background-color: white;
 }
+.bg-green-400 {
+  background-color: rgb(132 204 22);
+}
 .w-8-10 {
   width: 80%;
 }
@@ -262,4 +271,15 @@ input[type='checkbox']:hover {
 }
 .pointer {
   cursor: pointer;
+}
+.max {
+  width: 400;
+}
+.px-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.py-1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

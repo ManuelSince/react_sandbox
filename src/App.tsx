@@ -8,8 +8,15 @@ import { Counter } from './components/exercices/Counter';
 import { Formulaire } from './components/exercices/Formulaire';
 import { ListeCourses } from './components/exercices/ListeCourses';
 import { Toggle } from './components/exercices/Toggle';
+import { Cars } from './components/exercices/cars/Cars';
+import { ListeNoms } from './components/exercices/listeNoms';
+import { Header } from './components/exercices/Header';
+import { UseEffectExample } from './components/exercices/useEffectExercices/useEffectExample';
+import { UseEffectCleanUp } from './components/exercices/useEffectExercices/useEffectCleanUp';
+import { FetchApi } from './components/exercices/useEffectExercices/FetchApi';
 
 function App() {
+  const noms = ['manuel', 'louis', 'cedric', 'momo', 'mamadou', 'ludo'];
   const handleClick = () => {
     console.log('clicked');
   };
@@ -38,7 +45,34 @@ function App() {
       <Container className='rounded'>
         <ListeCourses />
       </Container>
-      <Container className='bg-green-400 rounded'>
+      <Container className='rounded'>
+        <Cars />
+      </Container>
+      <Container className='rounded'>
+        <ListeNoms names={noms} />
+      </Container>
+      <Container className='rounded bg-red-400'>
+        <Header>useEffect example</Header>
+        <UseEffectExample />
+      </Container>
+      <Container className='rounded bg-blue-400'>
+        <Header>afficher timer</Header>
+        <UseEffectCleanUp />
+      </Container>
+      <Container className='rounded bg-green-400'>
+        <Header>Fetch posts</Header>
+        <FetchApi />
+      </Container>
+      <Container className='rounded bg-red-400'>
+        <Header>4</Header>
+      </Container>
+      <Container className='rounded bg-blue-400'>
+        <Header>5</Header>
+      </Container>
+      <Container className='rounded bg-green-400'>
+        <Header>6</Header>
+      </Container>
+      <Container className='rounded'>
         <Todos />
       </Container>
     </div>

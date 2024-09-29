@@ -8,7 +8,7 @@ const Formulaire = (): ReactElement => {
       <h1 className=''>Formulaire</h1>
       <h2 className='font-30'>{textField}</h2>
       <div className='flex items-center justify-center gap-2 w-full'>
-        <input type='text' value={textField} onChange={(e) => setTextField(e.target.value)} />
+        <input type='text' onChange={(e) => setTextField(e.target.value)} />
       </div>
     </div>
   );
